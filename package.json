@@ -1,7 +1,6 @@
 {
   "name": "redux-essentials-example",
   "version": "1.0.0",
-  "private": true,
   "dependencies": {
     "@mswjs/data": "^0.8.4",
     "@reduxjs/toolkit": "^1.6.1",
