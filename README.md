@@ -55,3 +55,4 @@ On the client-side all state is normalized with the one exception of the reactio
 - Learning redux with emphasis on async code with createAsyncThunk and entity adapters. 
 - Learning Firebase methods.
 
+note:
