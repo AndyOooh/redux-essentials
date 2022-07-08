@@ -1,0 +1,26 @@
+{
+    "users": {
+      "ids": [
+        "user1",
+        "user2",
+        "user3"
+      ],
+      "entities": {
+        "user1": {
+          "id": "user1",
+          "firstName": "John",
+          "lastName": "Doe"
+        },
+        "user2": {
+          "id": "user2",
+          "firstName": "Tim",
+          "lastName": "Smith"
+        },
+        "user3": {
+          "id": "user3",
+          "firstName": "Jan",
+          "lastName": "Kowalski"
+        }
+      }
+    }
+  }

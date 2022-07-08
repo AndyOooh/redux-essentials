@@ -1,0 +1,8 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#232C4D",
+    "titleBar.activeBackground": "#313D6C",
+    "titleBar.activeForeground": "#FAFBFD"
+  },
+  "prettier.arrowParens": "avoid"
+}
