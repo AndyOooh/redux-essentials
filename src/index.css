@@ -4,16 +4,14 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 p {
@@ -29,7 +27,7 @@ nav {
 }
 
 nav section {
-  width: 100%;
+  width: 80%;
 }
 
 nav section h1,
@@ -53,6 +51,10 @@ nav a:first-of-type {
 nav a:hover {
   color: white;
   background: #926bcf;
+}
+
+input, select, textarea {
+  box-shadow: 0.02rem 0.02rem 0.02rem #00000038;
 }
 
 .navContent {
@@ -95,9 +97,10 @@ nav a:hover {
 /* Main content */
 
 section {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 90%;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  margin: 0 auto;
   padding: 0 1.5rem;
 }
 
@@ -113,8 +116,9 @@ section h1 {
 }
 
 .post-excerpt {
-  padding: 0.25rem 0.25rem;
+  padding: 1.25rem;
   border: 1px solid rgb(177, 174, 174);
+  box-shadow: 0.02rem 0.02rem 0.02rem #00000038;
   border-radius: 7px;
 }
 
@@ -177,31 +181,11 @@ button.reaction-button {
   height: 5em;
   border-radius: 50%;
   background: var(--redux-color);
-  background: -moz-linear-gradient(
-    left,
-    var(--redux-color) 10%,
-    rgba(128, 0, 255, 0) 42%
-  );
-  background: -webkit-linear-gradient(
-    left,
-    var(--redux-color) 10%,
-    rgba(128, 0, 255, 0) 42%
-  );
-  background: -o-linear-gradient(
-    left,
-    var(--redux-color) 10%,
-    rgba(128, 0, 255, 0) 42%
-  );
-  background: -ms-linear-gradient(
-    left,
-    var(--redux-color) 10%,
-    rgba(128, 0, 255, 0) 42%
-  );
-  background: linear-gradient(
-    to right,
-    var(--redux-color) 10%,
-    rgba(128, 0, 255, 0) 42%
-  );
+  background: -moz-linear-gradient(left, var(--redux-color) 10%, rgba(128, 0, 255, 0) 42%);
+  background: -webkit-linear-gradient(left, var(--redux-color) 10%, rgba(128, 0, 255, 0) 42%);
+  background: -o-linear-gradient(left, var(--redux-color) 10%, rgba(128, 0, 255, 0) 42%);
+  background: -ms-linear-gradient(left, var(--redux-color) 10%, rgba(128, 0, 255, 0) 42%);
+  background: linear-gradient(to right, var(--redux-color) 10%, rgba(128, 0, 255, 0) 42%);
   position: relative;
   -webkit-animation: load3 1.4s infinite linear;
   animation: load3 1.4s infinite linear;
@@ -270,4 +254,28 @@ button.reaction-button {
 
 .notification.new {
   background-color: rgba(29, 161, 242, 0.1);
+}
+
+.main-container {
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  gap: 3rem;
+  margin: 0 auto;
+  /* padding: 0; */
+}
+
+.add-post {
+  /* min-width: 25rem; */
+}
+
+.addpost-form {
+  min-width: 25rem;
+}
+
+.post-excerpts-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem
 }

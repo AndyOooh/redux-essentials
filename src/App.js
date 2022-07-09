@@ -21,7 +21,7 @@ function App() {
             exact
             path='/'
             render={() => (
-              <section>
+              <section className='main-container'>
                 <AddPostForm />
                 <PostsList />
               </section>
